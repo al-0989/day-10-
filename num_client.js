@@ -12,6 +12,7 @@ rlInterface.question("Enter a list of numbers: ", function(numbers){
   client.on("data", function(data){
     console.log("The largest number you entered was: " + data)
     process.exit();
+    
   });
 
   // Connect to server using this socket and send data
