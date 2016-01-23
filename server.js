@@ -1,10 +1,10 @@
 var net = require("net")
 
 var reverse = function(word){
-  var revWord = word.split("");
-  return revWord.reverse().join("")
-  // var arr = word.split(",").map(Number);
-  // return Math.max(...arr);
+  // var revWord = word.split("");
+  // return revWord.reverse().join("")
+  var arr = word.split(",").map(Number);
+  return Math.max(...arr);
 }
 
 var server = net.createServer(function(socket){
